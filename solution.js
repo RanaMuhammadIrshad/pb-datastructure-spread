@@ -83,7 +83,7 @@ Create a function that takes 4 integers as parameters and returns true or false 
 console.log(`*******06*******`);
 
 function isWhole(a, b, c, d) {
-  let NumAvg = (a + b + c + d) / 4;
+  let NumAvg = (a + b + c + d) / arguments.length;
 
   if (Number.isInteger(NumAvg)) {
     return true;
